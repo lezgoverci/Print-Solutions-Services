@@ -4,6 +4,38 @@ html, body{
     width: 100%;
     height: 100%;
 }
+nav{
+    height: 80px;
+    width:100%;
+    background: #8E966F;
+}
+
+nav #name{
+    display: none;
+}
+
+nav .right #more-option{
+    display: block;
+}
+
+nav .left{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height:100%;
+    margin-right: calc(50% - 19px);
+    margin-left: 35px;
+}
+
+nav #logo{
+    width: 38px;
+    height: 38px;
+    background: #EEB056;
+    border-radius: 50%;
+
+}
 
 section#home,
 section#templates,
