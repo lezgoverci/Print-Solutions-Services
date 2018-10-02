@@ -8,9 +8,24 @@ nav{
     height: 80px;
     width:100%;
     background: #8E966F;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
-nav #name{
+nav .left{
+    flex-grow: 1;
+}
+
+nav .right{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-right:30px;
+}
+
+nav .right .menu, nav #name{
     display: none;
 }
 
@@ -25,7 +40,7 @@ nav .left{
     justify-content: space-between;
     align-items: center;
     height:100%;
-    margin-right: calc(50% - 19px);
+    margin-right: calc(50vw - 54px);
     margin-left: 35px;
 }
 
@@ -46,6 +61,7 @@ section#complete,
 section#categories,
 section#products,
 section#more-photos,
-section#cart {
+section#cart,
+footer {
     display:none;
 }
