@@ -9,8 +9,25 @@ body{
     padding: 0;
     width: 100%;
     font-family: 'Roboto';
-    background: #C2BEA1;
 }
+
+/** Icons and Buttons **/
+img.previous-step{
+    height: auto;
+    widows: auto;
+}
+
+button.next-step{
+    background: #8E966F;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    padding: 7px 27px;
+}
+
+/** NAV **/
 
 nav{
     height: 80px;
@@ -78,6 +95,7 @@ section#home{
     width: 100%;
     height: 100%;
     margin-bottom: 100px;
+    background: #C2BEA1;
 }
 
 section#home .right{
@@ -148,7 +166,80 @@ section .left button:active{
     background: #8E966F;
 }
 
-section#templates,
+/** TEMPLATES **/
+
+section#templates{
+    width: 100%;
+    padding: 0 37px;
+    background: white;
+}
+
+section#templates #step-name{
+    font-size: 30px;
+    font-weight: 100;
+    color: #707070;
+    margin-top: 20px;
+}
+
+section#templates .steps{
+    position: relative;
+    margin-top: 27px;
+    height: auto;
+}
+
+section#templates .next-step{
+    float: right;
+}
+
+section#templates #template-list{
+
+    margin-top: 33px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+  
+
+}
+
+section#templates .template-selected{
+    position: absolute;
+    right: 10px;
+
+}
+
+section#templates .template-item{
+    border: #8E966F 1px solid;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 8px;
+    height: 120px;
+    display: inline-block;
+    position: relative;
+     
+    
+}
+
+section#templates .template-name{
+    font-size: 18px;
+    font-weight: 700;
+    color: #6B6B6B;
+    text-align: center;
+    padding-top: 30px;
+}
+
+section#templates .template-price{
+    font-size: 12px;
+    color: #919191;
+    text-align: center;
+}
+
+section#templates .template-details{
+    display: none;
+    
+}
+
+section#home,
+/* section#templates, */
 section#upload,
 section#styles,
 section#order,
