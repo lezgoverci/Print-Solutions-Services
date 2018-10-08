@@ -17,6 +17,7 @@ body, ul{
 img.previous-step{
     height: auto;
     widows: auto;
+    cursor: pointer;
 }
 
 button.next-step{
@@ -27,6 +28,7 @@ button.next-step{
     border-radius: 8px;
     text-align: center;
     padding: 7px 27px;
+    cursor: pointer;
 }
 
 #step-name{
@@ -65,7 +67,7 @@ section button.mainbutton{
 
 section button.mainbutton:hover{
     background: rgb(128, 136, 96);
-    cursor: pointer
+    cursor: pointer;
 }
 
 section button.mainbutton:active{
@@ -95,12 +97,8 @@ nav .right{
     margin-right:30px;
 }
 
-nav .right .menu, nav #name{
+nav #name{
     display: none;
-}
-
-nav .right #more-option{
-    display: block;
 }
 
 nav .left{
@@ -121,6 +119,35 @@ nav #logo{
     border-radius: 50%;
 
 }
+
+/** MENU **/
+
+nav #hamburger-menu{
+    cursor: pointer;
+}
+
+nav .right{
+    display: none;
+}
+
+nav .right.active{
+    position: fixed;
+    width: 220px;
+    height: 100%;
+    background: #F3F3F3;
+    display: block;
+    z-index: 1;
+    color: #707070;
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 96px;
+    padding-left: 69px;
+}
+
+nav .right .menu{
+    padding-bottom: 85px;
+}
+
 
 /** FOOTER **/
 footer{
@@ -407,17 +434,10 @@ section#styles .styles .info .brand{
 }
 
 
-section#home,
-section#templates,
-section#upload,
-/* section#styles, */
-section#styles #add-template-panel,
-section#styles #add-custom-options-panel,
-section#order,
-section#complete,
-section#categories,
-section#products,
-section#more-photos,
-section#cart {
+.hide-section {
     display:none;
+}
+
+.show-section{
+    display:block;
 }

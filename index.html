@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </head>
 <body>
     <nav>
@@ -14,14 +19,14 @@
             <img id="logo"></img>
             <div id="name">Print Solutions Services</div>
         </div>
-        <div class="right">
+        <div class="right" id="side-menu">
             <div id="products" class="menu">Products</div>
             <div id="services" class="menu">Services</div>
             <img id="more-option" src="images/ellipses.png"></img>
         </div>
     </nav>
     <main>
-        <section id="home">
+        <section id="home" class="">
             <div class="left">
                 <div>Print you own <br/>design now.</div>
                 <input type="text" name="fullname" id="fullname" placeholder="Full Name"/>
@@ -33,7 +38,7 @@
                 <div id="quote">Your business partner in printing</div>
             </div>
         </section>
-        <section id="templates">
+        <section id="templates" class="hide-section">
             <div class="steps">
                 <img class="previous-step" src="images/back.png"></img>
                 <button class="next-step">Next</button>
@@ -132,7 +137,7 @@
                 </div>
             </div>
         </section>
-        <section id="upload">
+        <section id="upload" class="hide-section">
             <div class="steps">
                 <img class="previous-step" src="images/back.png"></img>
                 <button class="next-step">Next</button>
@@ -156,7 +161,7 @@
                 </ul>
             </div>
         </section>
-        <section id="styles">
+        <section id="styles" class="hide-section">
             <div class="steps">
                 <img class="previous-step" src="images/back.png"></img>
                 <button class="next-step">Next</button>
@@ -303,7 +308,7 @@
                
             </ul>
             <div id="add-custom-options">Add Custom Options</div>
-            <div id="add-template-panel">
+            <div id="add-template-panel" class="hide-section">
                 <div id="template-list">
                     <div id="add-template-label">Pick one or more templates</div>
                     <button>Done</button>
@@ -399,7 +404,7 @@
                     </div>
                 </div>
             </div>
-            <div id="add-custom-options-panel">
+            <div id="add-custom-options-panel" class="hide-section">
                 <div id="preview"></div>
                 <div id="options">
                     <div>Pick a design</div>
@@ -450,7 +455,7 @@
                 </div>
             </div>
         </section>
-        <section id="order">
+        <section id="order" class="hide-section">
             <div class="steps">
                     <div id="step-name"></div>
                     <div class="previous-step"></div>
@@ -529,7 +534,7 @@
                 <div id="total-value">5,600.00</div>
             </div>
         </section>
-        <section id="complete">
+        <section id="complete" class="hide-section">
             <div class="left">
                 <div>Order is successfully added!</div>
                 <img src=""></div>
@@ -544,12 +549,12 @@
                 <div>This is a sponsor advertisement</div>
             </div>
         </section>
-        <section id="categories">
+        <section id="categories" class="hide-section">
             <div id="clothing">Clothing</div>
             <div id="accessories">Accessories</div>
             <div id="souvenirs">Souvenirs</div>
         </section>
-        <section id="products">
+        <section id="products" class="hide-section">
             <div id="cart">
                 <div>View Cart (2)</div>
                 <img src="" alt="" id="cart-icon">
@@ -586,7 +591,7 @@
             </ul>
             <button class="load-more">Load More</button>
         </section>
-        <section id="more-photos">
+        <section id="more-photos" class="hide-section">
             <div>Back</div>
             <div id="product-info">
                 <div id="product-name"></div>
@@ -599,7 +604,7 @@
             <div class="add-to-cart">Add to cart</div>
             <div class="back-to-top">Back to top</div>
         </section>
-        <section id="cart">
+        <section id="cart" class="hide-section">
             <div id="cart-label">Cart</div>
             <ul id="cart-items">
                 <li class="cart-item">
